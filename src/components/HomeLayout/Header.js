@@ -2,6 +2,9 @@
 import React from 'react'
 import Button from '../ui/Button';
 import { motion } from "framer-motion";
+import Image from 'next/image';
+import logo from '@/components/assests/images/logo.svg'
+import hero from '@/components/assests/images/hero.svg'
 
 export default function Header() {
   return (
@@ -10,13 +13,14 @@ export default function Header() {
       initial={{ opacity: 0, y: 50 }} // Start invisible & slightly below
       whileInView={{ opacity: 1, y: 0 }} // Fade in and move up
       transition={{ duration: 1.5, ease: "easeOut" }} // Slow & smooth
-      viewport={{ once: true }} // Runs only once per session
+      viewport={{ once: true, amount: 0.2 }} // Runs only once per session
+      style={{ willChange: "opacity, transform" }}
     >
       <div className="w-[142px]">
-        <img src="/images/logo.svg" alt="logo" />
+        <Image src={logo} alt="logo" />
       </div>
       <div className="md:w-[713px] w-full flex flex-col justify-center items-center px-2">
-        <img src="/images/hero.svg" alt="hero_image" className="" />
+        <Image src={hero} alt="hero_image" className="" />
         <h2 className="font-medium text-[36px] font-Euclid mt-5 text-center">
           Your personal AI stylist & digital wardrobe
         </h2>

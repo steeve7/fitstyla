@@ -1,4 +1,10 @@
 import React from 'react'
+import iphone16 from "@/components/assests/images/iPhone16.svg";
+import trousers from "@/components/assests/images/tousers.svg";
+import shirt from "@/components/assests/images/shirt.svg";
+import drink from "@/components/assests/images/drink.svg";
+import love from "@/components/assests/images/love.svg";
+import Image from 'next/image';
 
 export default function Outfit() {
   return (
@@ -15,8 +21,8 @@ export default function Outfit() {
         <div className=" md:w-[230px] lg:w-[343px] w-[180px] flex flex-col justify-center items-center gap-[16px] mt-10">
           <div className="flex flex-row items-center gap-4 border border-gray-100 md:rounded-lg rounded-[11px] md:w-[230px] lg:w-[343px] w-[180px]">
             <span className="bg-gray-200 py-4 md:w-[70px] lg:w-[96px] w-[66px]">
-              <img
-                src="/images/tousers.svg"
+              <Image
+                src={trousers}
                 alt="trouser-image"
                 className="md:w-[40px] lg:w-[50px] w-[34px] flex justify-center items-center m-auto"
               />
@@ -26,7 +32,7 @@ export default function Outfit() {
                 <h4 className="font-Poppins font-medium md:w-[11px] text-[9px] lg:text-[14px] leading-[20px] md:-ml-4 lg:-ml-3">
                   Date
                 </h4>
-                <img src="/images/love.svg" alt="love-image" />
+                <Image src={love} alt="love-image" />
               </div>
               <p className="font-Poppins font-normal md:w-[11px] text-[9px] lg:text-[12px] leading-[18px] md:-ml-11 lg:-ml-7">
                 Elegant
@@ -38,8 +44,8 @@ export default function Outfit() {
           </div>
           <div className="flex flex-row items-center gap-4 border border-gray-100 md:rounded-lg rounded-[11px] md:w-[230px] lg:w-[343px] w-[180px]">
             <span className="bg-gray-200 py-5 md:w-[70px] lg:w-[96px] w-[66px]">
-              <img
-                src="/images/shirt.svg"
+              <Image
+                src={shirt}
                 alt="shirt-image"
                 className="md:w-[40px] lg:w-[50px] w-[34px] flex justify-center items-center m-auto"
               />
@@ -49,7 +55,7 @@ export default function Outfit() {
                 <h4 className="font-Poppins font-medium md:w-[11px] text-[9px] lg:text-[14px] leading-[20px]">
                   Brunch
                 </h4>
-                <img src="/images/drink.svg" alt="drink-image" />
+                <Image src={drink} alt="drink-image" />
               </div>
               <p className="font-Poppins font-normal md:w-[11px] text-[9px] lg:text-[12px] leading-[18px] md:-ml-[35px] lg:-ml-[41px]">
                 Chic
@@ -62,7 +68,7 @@ export default function Outfit() {
         </div>
       </div>
       <div className="md:w-1/2 w-full md:order-1 order-2 animate-bounce-slow">
-        <img src="/images/iphone16.svg" alt="iphone_image" className="" />
+        <Image src={iphone16} alt="iphone_image" className="" />
       </div>
     </div>
   );

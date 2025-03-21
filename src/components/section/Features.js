@@ -15,6 +15,7 @@ export default function Features() {
         whileInView={{ opacity: 1, y: 0 }} // Fade in and move up
         transition={{ duration: 1.5, ease: "easeOut" }} // Slow & smooth
         viewport={{ once: true, amount: 0.2 }} // Runs only once per session
+        style={{ willChange: "opacity, transform" }}
       >
         Never stress about what to wear again
       </motion.h2>
@@ -24,6 +25,7 @@ export default function Features() {
         whileInView={{ opacity: 1, y: 0 }} // Fade in and move up
         transition={{ duration: 2.0, ease: "easeOut" }} // Slow & smooth
         viewport={{ once: true, amount: 0.2 }} // Runs only once per session
+        style={{ willChange: "opacity, transform" }}
       >
         <Wardrobe />
       </motion.div>
@@ -33,6 +35,7 @@ export default function Features() {
         whileInView={{ opacity: 1, y: 0 }} // Fade in and move up
         transition={{ duration: 2.5, ease: "easeOut" }} // Slow & smooth
         viewport={{ once: true, amount: 0.2 }} // Runs only once per session
+        style={{ willChange: "opacity, transform" }}
       >
         <Outfit />
       </motion.div>
@@ -42,6 +45,7 @@ export default function Features() {
         whileInView={{ opacity: 1, y: 0 }} // Fade in and move up
         transition={{ duration: 3.0, ease: "easeOut" }} // Slow & smooth
         viewport={{ once: true, amount: 0.2 }} // Runs only once per session
+        style={{ willChange: "opacity, transform" }}
       >
         <StyleChallenges />
       </motion.div>

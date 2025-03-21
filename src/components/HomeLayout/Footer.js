@@ -1,10 +1,16 @@
 import React from 'react'
+import Image from 'next/image';
+import logo from "@/components/assests/images/white-logo.svg";
+import facebook from "@/components/assests/images/facebook.svg";
+import twitter from "@/components/assests/images/twitter.svg";
+import instagram from "@/components/assests/images/instagram.svg";
+
 
 export default function Footer() {
   return (
     <footer className="dark-green w-full py-10 md:px-20">
       <div className="md:w-[250px] flex flex-col justify-center md:items-start items-center">
-        <img src="/images/white-logo.svg" alt="logo" className="w-[142px]" />
+        <Image src={logo} alt="logo" className="w-[142px]" />
         <p className="font-Euclid font-normal text-[16px] text-white mt-3 md:text-start text-center">
           Your personal AI stylist and digital wardrobe.
         </p>
@@ -20,24 +26,26 @@ export default function Footer() {
           </p>
         </div>
         <div className="flex flex-row items-center gap-4">
-          <img
-            src="/images/facebook.svg"
+          <Image
+            src={facebook}
             alt="facebook-icon"
             className="w-[25px] cursor-pointer"
           />
-          <img
-            src="/images/twitter.svg"
+          <Image
+            src={twitter}
             alt="twitter-icon"
             className="w-[25px] cursor-pointer"
           />
-          <img
-            src="/images/instagram.svg"
+          <Image
+            src={instagram}
             alt="instagram-icon"
             className="w-[25px] cursor-pointer"
           />
         </div>
       </div>
-      <p className="font-Euclid font-normal text-[16px] text-white flex justify-center items-center mt-8 md:mt-5 -mb-5">© 2025 Fitstyla, Inc. All rights reserved.</p>
+      <p className="font-Euclid font-normal text-[16px] text-white flex justify-center items-center mt-8 md:mt-5 -mb-5">
+        © 2025 Fitstyla, Inc. All rights reserved.
+      </p>
     </footer>
   );
 }

@@ -1,5 +1,11 @@
 import React from 'react'
 import { MdOutlineKeyboardArrowUp } from "react-icons/md";
+import iphone15 from "@/components/assests/images/iPhone15.svg";
+import spring from "@/components/assests/images/spring.svg";
+import fall from "@/components/assests/images/fall.svg";
+import summer from "@/components/assests/images/summer.svg";
+import winter from "@/components/assests/images/winter.svg";
+import Image from 'next/image';
 
 export default function Wardrobe() {
   return (
@@ -49,8 +55,8 @@ export default function Wardrobe() {
           </div>
           <div className="flex flex-row items-center justify-start gap-2 md:mt-5 mt-2 md:px-3 px-2">
             <div className="flex flex-row items-center gap-1 justify-center border py-1 px-4 border-gray-100 rounded-[14.26px] md:w-[50px] lg:w-[70px] w-[40px]">
-              <img
-                src="/images/spring.svg"
+              <Image
+                src={spring}
                 alt="spring-image"
                 className="md:text-[13px] lg:w-[17px] w-[10px]"
               />
@@ -59,8 +65,8 @@ export default function Wardrobe() {
               </p>
             </div>
             <div className="flex flex-row items-center gap-1 justify-center border py-1 px-1 custom-green-border rounded-[14.26px] md:w-[50px] lg:w-[82px] w-[47px]">
-              <img
-                src="/images/fall.svg"
+              <Image
+                src={summer}
                 alt="summer-image"
                 className="md:text-[13px] lg:w-[17px] w-[10px]"
               />
@@ -69,8 +75,8 @@ export default function Wardrobe() {
               </p>
             </div>
             <div className="flex flex-row items-center gap-1 justify-center border py-1 px-2 custom-green-border rounded-[14.26px] md:w-[35px] lg:w-[54px] w-[31px]">
-              <img
-                src="/images/summer.svg"
+              <Image
+                src={fall}
                 alt="fall-image"
                 className="md:text-[13px] lg:w-[17px] w-[10px]"
               />
@@ -79,8 +85,8 @@ export default function Wardrobe() {
               </p>
             </div>
             <div className="border border-gray-100 rounded-[14.26px] md:w-[55px] lg:w-[70.43px] w-[40px] py-1 px-1 flex flex-row items-center gap-1 justify-center">
-              <img
-                src="/images/winter.svg"
+              <Image
+                src={winter}
                 alt="winter-image"
                 className="md:text-[13px] lg:w-[17px] w-[10px]"
               />
@@ -92,7 +98,7 @@ export default function Wardrobe() {
         </div>
       </div>
       <div className="lg:w-1/2 md:w-[70%] w-full animate-bounce-slow">
-        <img src="/images/iphone15.svg" alt="iphone-image" />
+        <Image src={iphone15} alt="iphone-image" />
       </div>
     </div>
   );

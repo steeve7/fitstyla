@@ -2,6 +2,8 @@
 import React from 'react'
 import Button from '../ui/Button';
 import { motion } from 'framer-motion';
+import app from "@/components/assests/images/app.svg";
+import Image from 'next/image';
 
 export default function App() {
   return (
@@ -11,6 +13,7 @@ export default function App() {
       whileInView={{ opacity: 1, y: 0 }} // Fade in and move up
       transition={{ duration: 4.0, ease: "easeOut" }} // Slow & smooth
       viewport={{ once: true, amount: 0.2 }} // Runs only once per session
+      style={{ willChange: "opacity, transform" }}
     >
       <div className="flex flex-col justify-center items-center gap-4 px-5 md:px-0">
         <h2 className="font-Euclid font-medium md:text-[40px] lg:text-[50px] text-[24px] text-center">
@@ -20,8 +23,8 @@ export default function App() {
           Get the Fitstyla app today and make getting dressed the easiest part
           of your day.
         </p>
-        <img
-          src="/images/app.svg"
+        <Image
+          src={app}
           alt="app_image"
           className="mt-12 md:w-[400px] w-[300px] lg:w-[510px]"
         />

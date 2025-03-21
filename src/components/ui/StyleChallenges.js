@@ -1,4 +1,7 @@
 import React from 'react'
+import collections from "@/components/assests/images/collections.svg";
+import iphone14 from "@/components/assests/images/iphone14.svg";
+import Image from 'next/image';
 
 export default function StyleChallenges() {
   return (
@@ -12,14 +15,14 @@ export default function StyleChallenges() {
           Experiment with new looks, step out of your comfort zone, and get
           creative with confidence.
         </p>
-        <img
-          src="/images/collections.svg"
+        <Image
+          src={collections}
           alt="image_collections"
           className="md:w-[220px] lg:w-[340px] w-[180px] mt-5"
         />
       </div>
       <div className=" w-full md:w-1/2 animate-bounce-slow">
-        <img src="/images/iphone14.svg" alt="iphone-image" className="" />
+        <Image src={iphone14} alt="iphone-image" className="" />
       </div>
     </div>
   );
