@@ -8,10 +8,10 @@ import Image from 'next/image';
 export default function App() {
   return (
     <motion.div
-      className="w-full py-10"
+      className="w-full py-10 overflow-hidden"
       initial={{ opacity: 0, y: 50 }} // Start invisible & slightly below
       whileInView={{ opacity: 1, y: 0 }} // Fade in and move up
-      transition={{ duration: 4.0, ease: "easeOut" }} // Slow & smooth
+      transition={{ duration: 1.5, ease: "easeOut" }} // Slow & smooth
       viewport={{ once: true, amount: 0.2 }} // Runs only once per session
       style={{ willChange: "opacity, transform" }}
     >

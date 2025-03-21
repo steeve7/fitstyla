@@ -9,7 +9,7 @@ import hero from '@/components/assests/images/hero.svg'
 export default function Header() {
   return (
     <motion.header
-      className="w-full flex flex-col justify-center items-center gap-10 py-10 md:px-0"
+      className="w-full flex flex-col justify-center items-center gap-10 py-10 md:px-0 overflow-hidden"
       initial={{ opacity: 0, y: 50 }} // Start invisible & slightly below
       whileInView={{ opacity: 1, y: 0 }} // Fade in and move up
       transition={{ duration: 1.5, ease: "easeOut" }} // Slow & smooth
