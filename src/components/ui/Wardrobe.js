@@ -19,7 +19,7 @@ export default function Wardrobe() {
           new items, categorize them, and access your wardrobe anytime,
           anywhere.
         </p>
-        <div className="border border-gray-100 md:w-[280px] lg:w-[418px] w-[238px] md:rounded-[16px] rounded-[9px] md:py-6 py-2 mt-10">
+        <div className="border border-gray-200 md:w-[280px] lg:w-[418px] w-[238px] md:rounded-[16px] rounded-[9px] md:py-6 py-2 mt-10">
           <div className="flex flex-row justify-between items-center md:px-3 px-2 md:-mt-2">
             <p className="font-Poppins font-medium md:text-[9px] lg:text-[11px] text-[6px]">
               Condition
@@ -33,18 +33,18 @@ export default function Wardrobe() {
             <span className="font-Poppins font-medium md:text-[8px] lg:text-[11px] text-[6px] custom-red-color custom-red-border py-1 px-1 text-center rounded-[14.26px] md:w-[30px] lg:w-[45px] w-[26px]">
               New
             </span>
-            <span className="font-Poppins font-medium md:text-[8px] lg:text-[11px] text-[6px] md:w-[50px] lg:w-[67px] w-[39px] rounded-[14.26px] py-1 px-1 border text-center border-gray-100">
+            <span className="font-Poppins font-medium md:text-[8px] lg:text-[11px] text-[6px] md:w-[50px] lg:w-[67px] w-[39px] rounded-[14.26px] py-1 px-1 border text-center border-gray-200">
               Like New
             </span>
-            <span className="font-Poppins font-medium md:text-[8px] lg:text-[11px] text-[6px] md:w-[40px] lg:w-[50px] w-[29px] rounded-[14.26px] py-1 px-1 border text-center border-gray-100">
+            <span className="font-Poppins font-medium md:text-[8px] lg:text-[11px] text-[6px] md:w-[40px] lg:w-[50px] w-[29px] rounded-[14.26px] py-1 px-1 border text-center border-gray-200">
               Good
             </span>
-            <span className="font-Poppins font-medium md:text-[8px] lg:text-[11px] text-[6px] md:w-[30px] lg:w-[41px] w-[24px] rounded-[14.26px] py-1 px-1 border text-center border-gray-100">
+            <span className="font-Poppins font-medium md:text-[8px] lg:text-[11px] text-[6px] md:w-[30px] lg:w-[41px] w-[24px] rounded-[14.26px] py-1 px-1 border text-center border-gray-200">
               Fair
             </span>
           </div>
         </div>
-        <div className="border border-gray-100 md:w-[280px] lg:w-[418px] md:rounded-[16px] rounded-[9px] md:py-6 py-2 mt-5">
+        <div className="border border-gray-200 md:w-[280px] lg:w-[418px] md:rounded-[16px] rounded-[9px] md:py-6 py-2 mt-5">
           <div className="flex flex-row justify-between items-center md:-mt-3 md:px-3 px-2">
             <p className="font-Poppins font-medium md:text-[9px] lg:text-[11px] text-[7px]">
               Season
@@ -54,7 +54,7 @@ export default function Wardrobe() {
             </p>
           </div>
           <div className="flex flex-row items-center justify-start gap-2 md:mt-5 mt-2 md:px-3 px-2">
-            <div className="flex flex-row items-center gap-1 justify-center border py-1 px-4 border-gray-100 rounded-[14.26px] md:w-[50px] lg:w-[70px] w-[40px]">
+            <div className="flex flex-row items-center gap-1 justify-center border py-1 px-4 border-gray-200 rounded-[14.26px] md:w-[50px] lg:w-[70px] w-[40px]">
               <Image
                 src={spring}
                 alt="spring-image"
@@ -84,7 +84,7 @@ export default function Wardrobe() {
                 Fall
               </p>
             </div>
-            <div className="border border-gray-100 rounded-[14.26px] md:w-[55px] lg:w-[70.43px] w-[40px] py-1 px-1 flex flex-row items-center gap-1 justify-center">
+            <div className="border border-gray-200 rounded-[14.26px] md:w-[55px] lg:w-[70.43px] w-[40px] py-1 px-1 flex flex-row items-center gap-1 justify-center">
               <Image
                 src={winter}
                 alt="winter-image"

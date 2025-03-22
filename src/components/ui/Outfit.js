@@ -19,7 +19,7 @@ export default function Outfit() {
           dressed.
         </p>
         <div className=" md:w-[230px] lg:w-[343px] w-[180px] flex flex-col justify-center items-center gap-[16px] mt-10">
-          <div className="flex flex-row items-center gap-4 border border-gray-100 md:rounded-lg rounded-[11px] md:w-[230px] lg:w-[343px] w-[180px]">
+          <div className="flex flex-row items-center gap-4 border border-gray-200 md:rounded-lg rounded-[11px] md:w-[230px] lg:w-[343px] w-[180px]">
             <span className="bg-gray-200 py-4 md:w-[70px] lg:w-[96px] w-[66px]">
               <Image
                 src={trousers}
@@ -27,14 +27,14 @@ export default function Outfit() {
                 className="md:w-[40px] lg:w-[50px] w-[34px] flex justify-center items-center m-auto"
               />
             </span>
-            <div className="flex flex-col items-center gap-1">
-              <div className="flex flex-row items-center gap-2">
-                <h4 className="font-Poppins font-medium md:w-[11px] text-[9px] lg:text-[14px] leading-[20px] md:-ml-4 lg:-ml-3">
+            <div className="flex flex-col items-start justify-start gap-1">
+              <div className="flex flex-row items-center gap-1">
+                <h4 className="font-Poppins font-medium text-[9px] lg:text-[14px] leading-[20px]">
                   Date
                 </h4>
                 <Image src={love} alt="love-image" />
               </div>
-              <p className="font-Poppins font-normal md:w-[11px] text-[9px] lg:text-[12px] leading-[18px] md:-ml-11 lg:-ml-7">
+              <p className="font-Poppins font-normal text-[9px] lg:text-[12px] leading-[18px]">
                 Elegant
               </p>
               <p className="font-Poppins font-medium text-[7px] md:text-[9px] leading-[14px] custom-gray">
@@ -42,7 +42,7 @@ export default function Outfit() {
               </p>
             </div>
           </div>
-          <div className="flex flex-row items-center gap-4 border border-gray-100 md:rounded-lg rounded-[11px] md:w-[230px] lg:w-[343px] w-[180px]">
+          <div className="flex flex-row items-center gap-4 border border-gray-200 md:rounded-lg rounded-[11px] md:w-[230px] lg:w-[343px] w-[180px]">
             <span className="bg-gray-200 py-5 md:w-[70px] lg:w-[96px] w-[66px]">
               <Image
                 src={shirt}
@@ -50,17 +50,17 @@ export default function Outfit() {
                 className="md:w-[40px] lg:w-[50px] w-[34px] flex justify-center items-center m-auto"
               />
             </span>
-            <div className="flex flex-col items-center gap-1">
+            <div className="flex flex-col items-start justify-start gap-1">
               <div className="flex flex-row items-center md:gap-4 lg:gap-1">
-                <h4 className="font-Poppins font-medium md:w-[11px] text-[9px] lg:text-[14px] leading-[20px]">
+                <h4 className="font-Poppins font-medium text-[9px] lg:text-[14px] leading-[20px]">
                   Brunch
                 </h4>
                 <Image src={drink} alt="drink-image" />
               </div>
-              <p className="font-Poppins font-normal md:w-[11px] text-[9px] lg:text-[12px] leading-[18px] md:-ml-[35px] lg:-ml-[41px]">
+              <p className="font-Poppins font-normal text-[9px] lg:text-[12px] leading-[18px]">
                 Chic
               </p>
-              <p className="font-Poppins font-medium text-[7px] md:text-[9px] leading-[14px] custom-gray lg:-ml-3">
+              <p className="font-Poppins font-medium text-[7px] md:text-[9px] leading-[14px] custom-gray">
                 Apr 25, 2025
               </p>
             </div>
